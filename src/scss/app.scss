@@ -19,11 +19,27 @@ html {
   background: $background;
 }
 
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  display: flex;
+  flex-shring: 0;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: azure;
+}
+
 .main {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10rem;
-  flex-flow: column;
+  flex-shring: 0;
+  flex-grow: 1;
+  background-color: lightgray;
 }
